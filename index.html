@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather application</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <a href="/index.html">
+                <img class="logo" src="images/sun-logo.svg" alt="Weather related icon for a logo">
+            </a>
+
+            <nav class="primary-navigation">
+
+                <select class="units">
+                    <option value="celsius">Celsius - °C</option>
+                    <option value="fahrenheit">Fahrenheit - °F</option>
+                </select>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container">
+
+            <h1>How's the sky looking today?</h1>
+
+            <form class="search">
+
+                <input type="text" placeholder="🔍 Search for a place...">
+                <button type="submit" id="searchBtn">Search</button>
+
+            </form>
+
+
+            <div class="two-column-layout">
+
+                <!-- LEFT SIDE -->
+                <div class="weather-section">
+
+                    <div class="weather-card">
+
+                        <div class="weather-info">
+                            <h2>Plovdiv, Bulgaria</h2>
+                            <p>Saturday, Aug 16, 2026</p>
+                        </div>
+
+                        <div class="weather-temp">
+                            <div class="weather-icon">☀️</div>
+                            <span>20°</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="four-column-layout">
+
+                        <div class="feels-like">
+                            <p>Feels Like</p>
+                            <span>18°</span>
+                        </div>
+
+                        <div class="humidity">
+                            <p>Humidity</p>
+                            <span>46%</span>
+                        </div>
+
+                        <div class="wind">
+                            <p>Wind</p>
+                            <span>14 km/h</span>
+                        </div>
+
+                        <div class="precipitation">
+                            <p>Precipitation</p>
+                            <span>0 mm</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT SIDE -->
+                <div class="hourly-card">
+
+                    <div class="hourly-header">
+
+                        <h2>Hourly forecast</h2>
+
+                        <div class="day-options">
+                            <select>
+                                <option>Tuesday</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                    <div class="hourly-list">
+
+                        <div class="hour">
+                            <span>☀️ 3 PM</span>
+                            <span>20°</span>
+                        </div>
+
+                        <div class="hour">
+                            <span>☀️ 4 PM</span>
+                            <span>20°</span>
+                        </div>
+
+                        <div class="hour">
+                            <span>🌤️ 5 PM</span>
+                            <span>19°</span>
+                        </div>
+
+                        <div class="hour">
+                            <span>☁️ 6 PM</span>
+                            <span>18°</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <div>
+        <footer>
+            2026 Nik's Weather app inc. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+
+</html>
