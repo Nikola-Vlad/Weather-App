@@ -8,6 +8,16 @@
     padding-inline: 1rem;
 }
 
+.brand {
+    display: flex;
+    gap: 10px;
+}
+
+h3 {
+    color: white;
+    margin-top: 27px;
+}
+
 header .container {
     display: flex;
     justify-content: space-between;
@@ -114,29 +124,35 @@ input::placeholder {
 
 .weather-temp {
     display: flex;
-    gap: 10px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .weather-icon {
-    font-size: 48px;
+    width: 120px;
+    height: 120px;
+    background-image: url(../images/icon-sunny.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
 }
 
 .weather-temp span {
     color: #ffffff;
-    font-size: 70px;
+    font-size: 65px;
 }
 
 
 /* HOURLY CARD */
 
 .hourly-card {
-    width: 450px;
-    padding: 30px 30px;
+    width: 400px;
+    padding: 10px 30px;
     border-radius: 20px;
     background-color: #29283d;
     color: white;
     flex-shrink: 0;
+    font-size: bold;
 }
 
 .hourly-header {
@@ -148,13 +164,13 @@ input::placeholder {
 
 .hourly-header h2 {
     color: white;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .hourly-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 20px;
 }
 
 .day-options select {
@@ -169,14 +185,25 @@ input::placeholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
-
-    padding: 15px 10px;
+    gap: 10px;
     min-height: 46px;
     background-color: #33324a;
     border-radius: 8px;
 }
 
+.img-hour-flex {
+    display: flex;
+    align-items: center;
+}
+
+.hour img {
+    height: 50px;
+    width: 50px;
+}
+
+.hour span {
+    margin-inline-end: 10px;
+}
 
 /* WEATHER DETAILS */
 
@@ -201,6 +228,64 @@ input::placeholder {
     border-radius: 8px;
     padding: 16px;
     min-height: 90px;
+}
+
+.four-column-layout p {
+    margin: 0px 0px 25px 0;
+
+}
+
+.four-column-layout span {
+    margin: 0 20px 0 0;
+    font-size: 30px;
+}
+
+.weatherDetails-dailyForecast-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.daily-card h2 {
+    font-size: 20px;
+    color: white;
+}
+
+.daily-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.daily-forecast {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day-of-week {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 150px;
+    text-align: center;
+    background-color: #33324a;
+    border-radius: 12px;
+}
+
+.day-of-week p {
+    color: white;
+}
+
+.day-of-week img {
+    margin-bottom: 15px;
+    width: 55px;
+    height: 55px;
+}
+
+.daily-temps-flex {
+    display: flex;
+    gap: 30px;
+    color: white;
 }
 
 
