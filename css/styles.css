@@ -30,11 +30,24 @@ header .container {
 }
 
 .units {
-    width: 6rem;
-    height: 2rem;
+    width: 6.3rem;
+    height: 2.5rem;
     border-radius: 8px;
+    font-size: 13px;
+    padding: 5px 5px 5px 25px;
     background-color: #29283D;
     color: #ffffff;
+}
+
+.units-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.units-box img {
+    position: absolute;
+    left: 4px;
 }
 
 html,
@@ -61,13 +74,16 @@ h1 {
 input {
     width: 30rem;
     height: 3rem;
+    border: none;
     border-radius: 10px;
-    padding-left: 15px;
+    padding: 10px 0px 10px 40px;
+    background-color: #33324a;
+    color:white;
 }
 
 input::placeholder {
     font-size: 17px;
-    color: #1b2536;
+    color: white;
 }
 
 .search {
@@ -87,6 +103,22 @@ input::placeholder {
     color: #ffffff;
     font-size: medium;
     font-family: 'Inter', sans-serif;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;  
+}
+
+#searchIcon {
+    position: absolute;
+    padding-left: 10px;
 }
 
 .two-column-layout {
